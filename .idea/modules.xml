@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/apache-dubbo-example/apache-dubbo-example.iml" filepath="$PROJECT_DIR$/apache-dubbo-example/apache-dubbo-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-dubbo-example/dubbo-api/dubbo-api.iml" filepath="$PROJECT_DIR$/apache-dubbo-example/dubbo-api/dubbo-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-dubbo-example/dubbo-consumer/dubbo-consumer.iml" filepath="$PROJECT_DIR$/apache-dubbo-example/dubbo-consumer/dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-dubbo-example/dubbo-producer/dubbo-producer.iml" filepath="$PROJECT_DIR$/apache-dubbo-example/dubbo-producer/dubbo-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-dubbo-example/sapache-dubbo-example.iml" filepath="$PROJECT_DIR$/apache-dubbo-example/sapache-dubbo-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-dubbo.iml" filepath="$PROJECT_DIR$/spring-cloud-dubbo.iml" />
+    </modules>
+  </component>
+</project>

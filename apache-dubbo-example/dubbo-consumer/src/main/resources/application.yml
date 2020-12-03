@@ -1,0 +1,34 @@
+server:
+  port: 8020
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: dubbo-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.196.109.61:8848
+        namespace: d94c4986-796f-4f05-b5f4-44a6fa3ceac1
+
+#消费者
+#协议部分的配置（一般不要去改）
+#往注册中心注册
+#订阅
+dubbo:
+  protocol:
+    name: "dubbo"
+    port: -1
+  registry:
+    address: nacos://121.196.109.61:8848
+  #订阅
+  cloud:
+    # * 对所有的接口感兴趣
+    #指定服务感兴趣  使用服务名 多个用,隔开
+    subscribed-services: dubbo-producer
+  provider:
+    #配置负载均衡   roundrobin(轮循) random(随机)  leastActive（最少活跃调用数） ConsistentHash(一致性 Hash)
+    loadbalance: roundrobin
+
+

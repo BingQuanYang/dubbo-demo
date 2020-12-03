@@ -1,0 +1,9 @@
+version: "3"
+services:
+  sentinel-dashboard:
+    container_name: sentinel-dashboard
+    build: ./
+    restart: always
+    ports:
+      - 8719:8719
+      - 8788:8788

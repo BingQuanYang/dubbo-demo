@@ -1,0 +1,38 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: dubbo-producer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.196.109.61:8848
+        namespace: d94c4986-796f-4f05-b5f4-44a6fa3ceac1
+#生产者
+#扫描实现暴露接口的包
+#协议部分的配置（一般不要去改）
+##往注册中心注册
+dubbo:
+  scan:
+    #扫描实现暴露接口的包  多个使用,隔开
+    base-packages:  apache.dubbo.producer.service.impl
+  #协议部分的配置
+  protocol:
+    name: "dubbo"
+    #端口-1表示自增扫描  从开始20880
+    port: -1
+    #指定序列化方式
+    #dubbo的序列化
+    #java 的序列化
+    #json 的序列化
+    #kyro 序列化   针对java
+    serialization:
+  #往注册中心注册
+  registry:
+    address: nacos://121.196.109.61:8848
+    #address: eureka://121.196.109.61:8848
+    #address: zookeeper://121.196.109.61:8848
+
